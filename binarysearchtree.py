@@ -50,6 +50,12 @@ class BinarySearchTree:
     def __iter__(self):
         yield from self.next(self.root)
 
+    def __getitem__(self, item: str) -> int:
+        return self.find(item)
+
+    def __setitem__(self, key: str, value: int):
+        self.insert(key ,value)
+
     def next(self, v: Node):
         left = v.left_child()
         right = v.right_child()

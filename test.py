@@ -28,3 +28,8 @@ except KeyError:
 
 for course, hp in credit:
     print(course)
+
+credit['DA2003'] = 3
+print(credit['DA2003'])
+credit['DA2003'] = 5
+print(credit['DA2003'])
